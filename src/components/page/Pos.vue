@@ -120,10 +120,23 @@ export default {
   	document.getElementById('order-list').style.height = orderHeight + 'px';
   },
   methods:{
-  	// clicknow(){
-  	// 	this.$store.dispatch('addItemAction','aaa')
-  	// }
-  	...mapActions(['addItemAction','deleteAllAction','deleteItemAction','totalPriceAction'])
+  	/**
+  	*action方法的的转换
+  	*@param {goods}
+  	*/
+  	// ...mapActions(['addItemAction','deleteAllAction','deleteItemAction','totalPriceAction'])
+  	addItemAction(goods){
+  		this.$store.dispatch('addItemAction',goods)
+  	},
+  	deleteAllAction(){
+  		this.$store.dispatch('deleteAllAction')
+  	},
+  	deleteItemAction(goods){
+  		this.$store.dispatch('deleteItemAction',goods)
+  	},
+  	totalPriceAction(){
+  		this.$store.dispatch('totalPriceAction')
+  	},
   }
   
 }
