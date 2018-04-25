@@ -1,4 +1,4 @@
-# awesomepos
+# 入门到放弃之vuex
 
 > vue+vuex+vueroot
 
@@ -30,4 +30,3 @@ npm install vuex --save
 1. prototype 添加方法
 2. vue.use('file')
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-# AwesomePos
