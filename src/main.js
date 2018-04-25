@@ -6,10 +6,17 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './vuex/store'
-
+import base from './base'
+//全局方法一
+Vue.use(base)
+// 全局方法二
+Vue.prototype.changeData = function(){
+	alert('aaa')
+};
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
+
 
 /* eslint-disable no-new */
 new Vue({

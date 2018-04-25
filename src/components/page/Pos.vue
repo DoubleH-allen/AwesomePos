@@ -33,7 +33,7 @@
 	    </el-col>	
 	    <el-col :span="17">
 	    	<div class="usual-goods">
-	    		<div class="title">常用商品</div>
+	    		<div class="title" @click="changesData">常用商品</div>
 	    		<div>
 	    			<ul class="o-list">
 	    				<li v-for="goods in oftenGoods" @click="addItemAction(goods)">
@@ -137,6 +137,9 @@ export default {
   	totalPriceAction(){
   		this.$store.dispatch('totalPriceAction')
   	},
+  	changesData(){
+  		this.clickbbb();
+  	}
   }
   
 }
